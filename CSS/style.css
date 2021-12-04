@@ -124,3 +124,10 @@
   direction: rtl;
   align-self: flex-start;
 }
+.score{
+  position: relative;
+  left: 0.5vw;
+}
+.score-badge{
+  color: rgb(255, 193, 7);
+}
