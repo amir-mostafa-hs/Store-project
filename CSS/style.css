@@ -77,7 +77,7 @@
   font-size: 3vw;
   font-weight: 700;
   stroke-width: 2;
-  animation: textAnimate 5s infinite alternate;
+  animation: textAnimate 10s infinite alternate;
 }
 
 @keyframes textAnimate {
@@ -89,12 +89,12 @@
 
   100% {
     stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -20%;
+    stroke-dashoffset: -20%;
     fill: hsla(189, 68%, 75%, 0%);
   }
 }
 /* end top banner style */
-/*  */
+/* start main shop style */
 .main-shop {
   /* background: linear-gradient(35deg, #95e5e55e, #7875c95e); */
   padding-top: 10px;
