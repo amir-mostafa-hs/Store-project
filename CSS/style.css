@@ -100,16 +100,16 @@
   padding-top: 10px;
   background-color: rgba(85, 85, 85, 0.3);
 }
+/* start main shop item */
 .shop-item {
-  margin: 5px;
+  margin: 10px 5px;
   max-width: 20vw;
   min-height: 32vh;
-  height: 45vh;
+  height: 50vh;
   /* max-height: 50vh; */
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   background-color: rgb(43, 43, 43);
   border-radius: 10px;
 }
@@ -122,12 +122,130 @@
   color: white;
   margin: 0px 20px 0px 20px;
   direction: rtl;
+  text-align: center;
   align-self: flex-start;
+  /* position: relative; */
 }
-.score{
+/* item shop price */
+.item-shop-price{
+  /* margin-top: -10%; */
+  color: white;
+  font-weight: 600;
+  padding: 1px 10px;
+  border-radius: 5px;
+}
+/* start score badge */
+.score {
   position: relative;
   left: 0.5vw;
 }
-.score-badge{
+.score-badge {
   color: rgb(255, 193, 7);
+}
+/* start shop and like btn */
+.btn-item-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.btn-item-shop {
+  margin: 1px;
+  min-width: 2rem;
+  min-height: 2rem;
+  position: relative;
+  left: 2rem;
+  overflow: hidden;
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.btn-item-shop:hover .btn-item-one {
+  top: 2rem;
+}
+.btn-item-shop:hover .btn-item-two {
+  top: 10%;
+}
+
+.btn-item-like {
+  margin: 1px;
+  min-width: 2rem;
+  min-height: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.btn-item-like:hover .btn-item-one {
+  top: 2rem;
+}
+.btn-item-like:hover .btn-item-two {
+  top: 10%;
+}
+
+.btn-item-one {
+  display: block;
+  position: absolute;
+  top: 0.1rem;
+  transition: all 0.15s ease-in-out;
+}
+.btn-item-two {
+  display: block;
+  position: absolute;
+  top: -2rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-left-about {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-bottom: 5px;
+  height: 1.8rem;
+  width: 2.5rem;
+  visibility: hidden;
+  text-align: center;
+}
+.btn-item-shop:hover + .btn-left-about {
+  animation-name: leftmove;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  position: relative;
+  visibility: visible;
+}
+@keyframes leftmove {
+  0% {
+    left: -10px;
+  }
+  100% {
+    left: -40px;
+  }
+}
+.btn-right-about {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 2px;
+  position: relative;
+  left: -36px;
+  height: 1.8rem;
+  width: 2.5rem;
+  visibility: hidden;
+  text-align: center;
+}
+.btn-item-like:hover + .btn-right-about {
+  animation-name: rightmove;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+@keyframes rightmove {
+  0% {
+    left: -32px;
+  }
+  100% {
+    left: -1px;
+  }
 }
