@@ -19,61 +19,62 @@
     <!-- linked style.css -->
     <link rel="stylesheet" href="../CSS/style.css" />
   </head>
-  <body class="bg-dark">
+  <body class="bg-dark body-shop">
     <!-- start coding header -->
-    <header class="header container-fluid px-5">
-      <div class="row">
-        <a href="index.html" class="col-2 header-link"> Shop Store</a>
-        <i class="col header-link bi bi-shop"></i>
-        <button type="button" class="col-1 gy-1 btn-top btn btn-warning">
-          sign up
-        </button>
-        <button
-          type="button"
-          class="col-1 gy-1 btn-top btn btn-outline-warning"
-        >
-          log in
-        </button>
-      </div>
+    <header class="header">
+      <a href="index.html" class="header-link"> Shop Store</a>
+      <i class="header-icon bi bi-shop"></i>
+      <button type="button" class="btn-top-up btn btn-warning">sign up</button>
+      <button type="button" class="btn-top-in btn btn-outline-warning">
+        log in
+      </button>
     </header>
     <!-- end coding header -->
     <!-- start top banner slider -->
     <img
-      class="mx-auto d-block container gx-0"
+      class="mx-auto d-block container gx-0 top-image"
       src="../images/header-banner.jpg"
       alt="laptop banner"
     />
     <!-- end top banner slider -->
     <!-- start navbar slider -->
-    <nav class="nav-bar container">
-      <div class="row">
-        <a href="#" class="col-1 nav-bar-link"
+    <div class="nav-bar-bg container">
+      <nav class="nav-bar container">
+        <a href="#" class="nav-bar-link"
           ><i class="bi bi-house-fill"></i>HOME</a
         >
-        <a href="#" class="col-1 nav-bar-link"
-          ><i class="bi bi-cart-fill"></i>SHOP</a
-        >
-        <a href="#" class="col-1 nav-bar-link">ABOUT</a>
-        <form action="#" class="col nav-form">
+        <a href="#" class="nav-bar-link"><i class="bi bi-cart-fill"></i>SHOP</a>
+        <a href="#" class="nav-bar-link">ABOUT</a>
+        <form action="#" class="nav-form">
           <input
-            class="col-2 nav-form-search form-control"
+            class="nav-form-search form-control"
             type="search"
             name=""
             id=""
           />
-          <button type="button" class="btn nav-form-btn btn-outline-dark">
+          <button type="button" class="btn nav-form-btn btn-outline-success">
             SEARCH
           </button>
         </form>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- start navbar slider -->
     <!-- start coding offer banner motion -->
     <div class="container">
-      <div class="offer row gy-5">
+      <div class="offer row">
         <svg width="100%" height="13vh" class="offer-banner">
           <text x="50%" y="50%" text-anchor="middle">
             Incredible Black Friday discounts of up to 50%
+          </text>
+        </svg>
+      </div>
+      <div class="offer-media row">
+        <svg width="100%" height="100%" class="offer-banner-media">
+          <text x="50%" y="40%" text-anchor="middle">
+            Incredible Black Friday
+          </text>
+          <text x="50%" y="80%" text-anchor="middle">
+            discounts of up to 50%
           </text>
         </svg>
       </div>
@@ -83,7 +84,7 @@
     <main class="container main-shop">
       <!-- all store items are coding here -->
       <!-- In this aside, another aside is used for the container of the item photo and its related content. -->
-      <aside class="row">
+      <!-- <aside class="row">
         <aside class="col">
           <figure class="shop-item">
             <div class="position-relative">
@@ -840,7 +841,7 @@
             </div>
           </figure>
         </aside>
-      </aside>
+      </aside> -->
     </main>
     <footer></footer>
     <!-- bootstrap separate -->
