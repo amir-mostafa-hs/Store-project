@@ -655,7 +655,7 @@
   font-weight: 500;
 }
 /* start responsive #footer style */
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1400px) {
   .footer-about {
     grid-column: span 3;
   }
